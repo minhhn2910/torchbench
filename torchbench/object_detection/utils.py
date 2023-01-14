@@ -223,8 +223,8 @@ def evaluate_detection_coco(
                     break
 
                 # get the cached values from sotabench.com if available
-                client = Client.public()
-                cached_res = client.get_results_by_run_hash(run_hash)
+                # client = Client.public()
+                cached_res = None #client.get_results_by_run_hash(run_hash)
                 if cached_res:
                     iterator.close()
                     print(
